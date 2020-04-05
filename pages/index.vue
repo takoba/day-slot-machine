@@ -3,21 +3,59 @@
     <h1>Day Slot Machine</h1>
     <v-row justify="center" align="center">
       <v-col cols="4">
-        <span class="display-4 d-block text-center">{{ drawed.year() }}</span>
+        <span
+          :class="{
+            'display-4': $vuetify.breakpoint.smAndUp,
+            'display-1': $vuetify.breakpoint.xsOnly,
+            'd-block': true,
+            'text-center': true
+          }"
+          >{{ drawed.year() }}</span
+        >
       </v-col>
       <v-col cols="1">
-        <span class="display-4 d-block text-center">/</span>
+        <span
+          :class="{
+            'display-3': $vuetify.breakpoint.smAndUp,
+            'display-1': $vuetify.breakpoint.xsOnly,
+            'd-block': true,
+            'text-center': true
+          }"
+          >/</span
+        >
       </v-col>
       <v-col cols="3">
-        <span class="display-4 d-block text-center">{{
-          drawed.month() + 1
-        }}</span>
+        <span
+          :class="{
+            'display-4': $vuetify.breakpoint.smAndUp,
+            'display-1': $vuetify.breakpoint.xsOnly,
+            'd-block': true,
+            'text-center': true
+          }"
+          >{{ drawed.month() + 1 }}</span
+        >
       </v-col>
       <v-col cols="1">
-        <span class="display-4 d-block text-center">/</span>
+        <span
+          :class="{
+            'display-3': $vuetify.breakpoint.smAndUp,
+            'display-1': $vuetify.breakpoint.xsOnly,
+            'd-block': true,
+            'text-center': true
+          }"
+          >/</span
+        >
       </v-col>
       <v-col cols="3">
-        <span class="display-4 d-block text-center">{{ drawed.date() }}</span>
+        <span
+          :class="{
+            'display-4': $vuetify.breakpoint.smAndUp,
+            'display-1': $vuetify.breakpoint.xsOnly,
+            'd-block': true,
+            'text-center': true
+          }"
+          >{{ drawed.date() }}</span
+        >
       </v-col>
     </v-row>
     <v-row justify="center" align="center">
